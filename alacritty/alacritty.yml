@@ -1,5 +1,6 @@
 import:
-  - ~/.config/alacritty/dracula.yml
+  - ~/.config/alacritty/dracula.yml  #Import color file
+
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
 # Import additional configuration files
 #

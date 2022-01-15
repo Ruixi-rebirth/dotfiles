@@ -1,12 +1,3 @@
-# Dracula theme for Alacritty
-# https://draculatheme.com/alacritty
-#
-# Color palette
-# https://spec.draculatheme.com
-#
-# Template
-# https://github.com/alacritty/alacritty/blob/master/alacritty.yml
-
 colors:
   primary:
     background: '#282a36'
