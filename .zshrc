@@ -118,3 +118,5 @@ alias fzf.w="fzf --height 40% --layout reverse --info inline --border \
 alias r="ranger"
 
 alias n="neofetch | lolcat"
+
+alias vi="nvim"

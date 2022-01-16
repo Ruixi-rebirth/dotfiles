@@ -1,11 +1,6 @@
-GTK_IM_MODULE=fcitx5
-QT_IM_MODULE=fcitx5
-XMODIFIERS="@im=fcitx5"
-
-
 export GOOGLE_API_KEY=AIzaSyCorhXqvEbttbWrSAgbgTwSZaZdC0vjCKQ
 export GOOGLE_DEFAULT_CLIENT_ID=242230661526-ule49aka37d5cggmvaj95t9v8jes3ne8.apps.googleusercontent.com
 export GOOGLE_DEFAULT_CLIENT_SECRET=dLlCiK19n3Wh0eZJRgNkYRVG
 
-
-export SSLKEYLOGFILE=/home/ruixi/wireshark/sslkey.log
+export PATH=~/.node_modules/bin:$PATH
+export PATH=~/.cargo/bin:$PATH
