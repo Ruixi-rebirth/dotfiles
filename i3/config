@@ -44,6 +44,9 @@ bindsym $mod+d exec --no-startup-id ~/.config/rofi/launcher.sh
 # start rofi (a program powermenu)
 bindsym $mod+p exec --no-startup-id ~/.config/rofi/powermenu.sh
 
+## Placing software in a specific workspace(get class--> xprop | grep CLASS)
+for_window [class="YouTube Music"] move --no-auto-back-and-forth container to workspace $ws10
+
 ## Change focus
 bindsym $mod+j             focus left
 bindsym $mod+k             focus down
