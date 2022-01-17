@@ -168,6 +168,13 @@ bindsym Shift+Ctrl+Up            resize grow   height 5 px or 5 ppt
 bindsym Shift+Ctrl+Down          resize shrink height 5 px or 5 ppt
 bindsym Shift+Ctrl+Right         resize grow   width  5 px or 5 ppt
 
+## adjust volume
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% 
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% 
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle 
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ 
+## To adjust the brightness, I use "mate-power-manager",Please download it
+
 ## reload the configuration file
 bindsym $mod+Shift+c reload
 ## restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
