@@ -102,21 +102,17 @@ source $ZSH/oh-my-zsh.sh
 #
 #
 #
-#环境变量
-export PATH=$HOME/.config/rofi/bin:$PATH
-#
-#
-#
-#
-alias fzf.p="fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'"
 
-
+export FZF_DEFAULT_OPTS="--preview 'bat --style=numbers --color=always --line-range :500 {}'"
+export FZF_DEFAULT_COMMAND='fd'
+alias f='nvim $(fzf)'
+#alias fzf.p="fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'"
 alias fzf.w="fzf --height 40% --layout reverse --info inline --border \
     --preview 'file {}' --preview-window down:1:noborder \
     --color 'fg:#bbccdd,fg+:#ddeeff,bg:#334455,preview-bg:#223344,border:#778899'"
 
-alias r="ranger"
+alias ra='ranger'
 
-alias n="neofetch | lolcat"
+alias n='neofetch | lolcat'
 
-alias vi="nvim"
+alias vi='nvim'

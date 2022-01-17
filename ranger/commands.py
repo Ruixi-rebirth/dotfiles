@@ -212,7 +212,7 @@ class up(Command):
 
 ##############
 #fzf integration
-class fzf(Command):
+class fzf_select(Command):
     """
     :fzf_select
     Find a file using fzf.
@@ -271,6 +271,5 @@ class fzf(Command):
                 self.fm.cd(selected)
             else:
                 self.fm.select_file(selected)
-
 
 
