@@ -1,0 +1,1 @@
+/home/ruixi/.config/zsh/dracula.zsh-theme
