@@ -1,4 +1,6 @@
 set $mod Mod1
+## Make the layout close to a binary tree
+for_window [class=".*"] split toggle
 ## Set gap 
 gaps inner  10
 
