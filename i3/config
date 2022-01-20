@@ -1,7 +1,9 @@
 set $mod Mod1
-
 ## Set gap 
 gaps inner  10
+
+## In order to solve the polybar error: tray: Failed to put tray above xxxxxx in the stack (XCB_MATCH (8))
+gaps bottom 25
 
 ## Clear border & title 
 new_window none
@@ -12,7 +14,7 @@ exec_always --no-startup-id feh --randomize --bg-fill ~/.config/i3/Background/fe
 #exec_always --no-startup-id  sleep 0.03; ~/.config/i3/Wallpaper/wallpaper-wrap.sh& 
 
 ## Autostart(exec only executes the command when i3 is started, and exec_always executes the command each time i3 is reloaded)
-exec        --no-startup-id  picom
+exec_always  --no-startup-id  picom
 exec_always --no-startup-id  ~/.config/polybar/launch.sh
 exec        --no-startup-id  conky
 exec        --no-startup-id  mate-power-manager
@@ -29,6 +31,7 @@ bindsym $mod+Return exec --no-startup-id alacritty
 
 ## Kill focused window
 bindsym $mod+Shift+p kill
+
 
 ## Quickly start some software
 bindsym $mod+m exec --no-startup-id   chromium
@@ -66,6 +69,11 @@ bindsym $mod+Shift+Left       move left
 bindsym $mod+Shift+Down       move down
 bindsym $mod+Shift+Up         move up
 bindsym $mod+Shift+Right      move right
+
+# hide | show window(minus is "-" and plus is "+".)
+#bindsym $mod+minus move scratchpad
+#bindsym $mod+equal scratchpad show
+
 
 ## Split in horizontal orientation
 bindsym $mod+h split h
