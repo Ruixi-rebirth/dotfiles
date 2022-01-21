@@ -1,11 +1,8 @@
 set $mod Mod1
 ## Make the layout close to a binary tree
-for_window [class=".*"] split toggle
+#for_window [class=".*"] split toggle
 ## Set gap 
 gaps inner  10
-
-## In order to solve the polybar error: tray: Failed to put tray above xxxxxx in the stack (XCB_MATCH (8))
-gaps bottom 25
 
 ## Clear border & title 
 new_window none
