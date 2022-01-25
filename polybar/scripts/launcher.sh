@@ -5,15 +5,10 @@
 ## Github  : @adi1090x
 ## Twitter : @adi1090x
 
-# Available Styles
-# >> Created and tested on : rofi 1.6.0-1
-#
-# style_1     style_2     style_3     style_4     style_5     style_6
-# style_7     style_8     style_9     style_10    style_11    style_12
 
-theme="launcher_style"
+theme="launcher"
 
-dir="$HOME/.config/polybar/scripts/rofi/"
+dir="$HOME/.config/rofi/"
 
  #dark
 #ALPHA="#00000000"
@@ -23,10 +18,10 @@ dir="$HOME/.config/polybar/scripts/rofi/"
 
 # light
 ALPHA="#00000000"
-BG="#E6E6FA"
-FG="#000000ff"
-SELECT="#B0C4DE"
-ACCENT="#D8BFD8"
+BG="#3B4253"
+FG="#BF616A"
+SELECT="#343a46"
+ACCENT="#3B4252"
 # accent colors
 #COLORS=('#EC7875' '#61C766' '#FDD835' '#42A5F5' '#BA68C8' '#4DD0E1' '#00B19F' \
 #		'#FBC02D' '#E57C46' '#AC8476' '#6D8895' '#EC407A' '#B9C244' '#6C77BB')
