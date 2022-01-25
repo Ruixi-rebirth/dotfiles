@@ -1,6 +1,6 @@
 ## <center>Features</center>
 
-- **Say to myself: ha ha 😃，I have tried other wm, but i3-gaps is still suitable for me, maybe I am used to i3, maybe I am too naive**
+- **Say to myself: ha ha 😃，I have tried other wm, but i3-gaps is still suitable for me, maybe I am used to i3, maybe I am too naive！！！**
 
 ![](image/show1.png)
 
