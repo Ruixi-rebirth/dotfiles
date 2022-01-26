@@ -87,6 +87,11 @@ for_window [title="Authy"]                            floating enable
 for_window [class="feh"]                              floating enable
 for_window [class="mpv"] floating enable resize set 960 540, move position center center 
 
+## Popups during fullscreen mode(popup_during_fullscreen smart|ignore|leave_fullscreen)
+popup_during_fullscreen smart
+
+## Sticky floating windows(sticky enable|disable|toggle)
+for_window [instance=chromium] sticky enable
 
 ## Split in horizontal orientation
 bindsym $mod+semicolon split v
