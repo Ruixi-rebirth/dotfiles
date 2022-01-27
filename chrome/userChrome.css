@@ -10,6 +10,7 @@ toolbox#navigator-toolbox {
 #titlebar #TabsToolbar {
   padding: 6px 0px 2px 6px !important;
   background: var(--base_color1) !important;
+  visibility: collapse;
 }
 .titlebar-spacer[type="pre-tabs"] {
   display: none;
@@ -267,7 +268,7 @@ toolbar
   background: var(--base_color2) !important;
   border-color: var(--base_color2) !important;
   border-width: 0 !important;
-  border-radius: 3px !important;
+  border-radius: 10px !important;
 }
 
 #urlbar[focused="true"] > #urlbar-background,
@@ -346,9 +347,15 @@ toolbar
 }
 
 /*================== URL BAR ==================*/
-#urlbar {
+#urlbar .urlbar-input-box {
   text-align: center !important;
 }
+
+/* right click on urlbar context align */
+#urlbar .textbox-contextmenu  {
+  text-align: left !important;
+}
+
 #urlbar[breakout][breakout-extend] {
   top: 5px !important;
   left: 0px !important;
@@ -387,11 +394,34 @@ toolbar
   background-color: var(--base_color1) !important;
 }
 
-#sidebar-header {
+
+/* The default sidebar width. */
+/* #sidebar-box { */
+/*   overflow: hidden!important; */
+/*   position: relative!important; */
+/*   transition: all 100ms!important; */
+/*   min-width: 40px !important; */
+/*   max-width: 300px !important; */
+/* } */
+
+/* The sidebar width when hovered. */
+/* #sidebar-box #sidebar,#sidebar-box:hover { */
+/*   transition: all 100ms!important; */
+/*   min-width: 300px !important; */
+/*   max-width: 300px !important; */
+/* } */
+
+
+/* only remove TST headers */
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar-header {
+  display: none; /* remove sidebar header */
   border-color: var(--base_color2) !important;
 }
 
 .sidebar-splitter {
+  /* display: none;  remove sidebar split line */
+  min-width: 1px !important;
+  max-width: 1px !important;
   border-color: var(--base_color2) !important;
 }
 
@@ -595,9 +625,9 @@ toolbarseparator {
 #viewButton > menupopup menupopup {
   -moz-appearance: none !important;
   background-color: var(--base_color1) !important;
-  border: 1px solid var(--base_color2) !important;
+  border: 0px solid var(--base_color2) !important;
   border-radius: 3px !important;
-  padding: 4px 2px 4px 2px !important;
+  padding: 0px 0px 0px 0px !important;
   margin: 0px 0px 0px 0px !important;
   min-width: 226px !important;
 }
@@ -628,8 +658,8 @@ toolbarseparator {
 #widget-overflow #customizationPanelItemContextMenu :-moz-any(menuitem, menu) {
   -moz-appearance: none !important;
   color: var(--orbit_color) !important;
-  padding: 0px 0px 2px 0px !important;
-  min-height: 22px !important;
+  padding: 0px 0px 0px 0px !important;
+  min-height: 24px !important; /* context menu minial height */
 }
 
 #back-button > menupopup menugroup,
@@ -800,13 +830,18 @@ toolbarseparator {
   menuitem[checked="true"][type="checkbox"]
   > .menu-iconic-left {
   -moz-appearance: none !important;
-  padding: 7px 0px 0px 0px !important;
-  margin-left: 7px !important;
-  margin-right: -7px !important;
+  /* padding: 7px 0px 0px 0px !important; */
+  margin-inline: 0px !important; /* icon align */
+  /* margin-right: -7px !important; */
   border: solid var(--orbit_color);
   border-width: 0px 0px 2px 2px;
   border-radius: 3px !important;
   transform: rotate(-45deg) scale(0.75);
+}
+
+/* align for context menu icon */
+menupopup .menu-iconic-icon {
+  margin-inline: 6px !important;
 }
 
 #back-button menuitem[type="radio"],
@@ -960,7 +995,7 @@ toolbarseparator {
   > #customizationPanelItemContextMenu
   menuitem[type="checkbox"]
   > .menu-iconic-text {
-  margin-left: 15px !important;
+  /* margin-left: 15px !important; */
   -moz-appearance: none !important;
 }
 
@@ -1173,7 +1208,7 @@ toolbarseparator {
   menuitem
   > .menu-iconic-left {
   -moz-appearance: none !important;
-  padding: 0px 6px 0px 8px !important;
+  padding: 0px 0px 0px 0px !important; /* align icon */
 }
 
 #back-button > menupopup .menu-right,
@@ -1208,3 +1243,4 @@ toolbarseparator {
   border-width: 0px 2px 2px 0px;
   transform: rotate(-45deg) scale(0.55);
 }
+
