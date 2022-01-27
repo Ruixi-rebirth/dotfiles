@@ -47,6 +47,9 @@ bindsym Super_L exec --no-startup-id ~/.config/rofi/launcher.sh
 ## Placing software in a specific workspace(get class--> xprop | grep CLASS)
 for_window [class="YouTube Music"] move --no-auto-back-and-forth container to workspace $ws10
 
+## Focus follows mouse
+focus_follows_mouse no
+
 ## Change focus
 bindsym $mod+h             focus left
 bindsym $mod+j             focus down
