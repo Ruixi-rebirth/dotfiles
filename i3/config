@@ -13,8 +13,8 @@ exec_always --no-startup-id feh --randomize --bg-fill ~/.config/i3/Background/fe
 #exec_always --no-startup-id  sleep 0.03; ~/.config/i3/Wallpaper/wallpaper-wrap.sh& 
 
 ## Autostart(exec only executes the command when i3 is started, and exec_always executes the command each time i3 is reloaded)
-exec        --no-startup-id  xrdb -merge ~/.Xresources
 exec_always --no-startup-id  picom
+exec        --no-startup-id  xrdb -merge ~/.Xresources
 exec_always --no-startup-id  ~/.config/polybar/launch.sh
 exec        --no-startup-id  conky
 exec        --no-startup-id  mate-power-manager
