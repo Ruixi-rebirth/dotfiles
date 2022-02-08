@@ -13,7 +13,7 @@ exec_always --no-startup-id feh --randomize --bg-fill ~/.config/i3/Background/fe
 #exec_always --no-startup-id  sleep 0.03; ~/.config/i3/Wallpaper/wallpaper-wrap.sh& 
 
 ## Autostart(exec only executes the command when i3 is started, and exec_always executes the command each time i3 is reloaded)
-exec_always --no-startup-id  picom
+exec_always --no-startup-id  picom 
 exec        --no-startup-id  xrdb -merge ~/.Xresources
 exec_always --no-startup-id  ~/.config/polybar/launch.sh
 exec        --no-startup-id  conky
@@ -23,22 +23,14 @@ exec        --no-startup-id  flameshot
 exec        --no-startup-id  fcitx5
 exec        --no-startup-id  nm-applet
 
-## Use Mouse+$mod to drag floating windows to their wanted position
-floating_modifier $mod
-
-## Start a terminal
-bindsym $mod+Return exec --no-startup-id alacritty
-
-## Kill focused window
-bindsym $mod+Shift+p kill
-
-
 ## Quickly start some software
+bindsym $mod+Return exec --no-startup-id alacritty
 bindsym $mod+m exec --no-startup-id   chromium
 bindsym $mod+n exec --no-startup-id   firefox
 bindsym $mod+t exec --no-startup-id   telegram-desktop
 bindsym $mod+q exec --no-startup-id   icalingua
 bindsym $mod+b exec --no-startup-id   youtube-music
+bindsym $mod+v exec --no-startup-id   electron-netease-cloud-music
 bindsym F1 exec     --no-startup-id   flameshot gui
 #start  betterlockscreen(Set lock screen wallpaper:betterlockscreen -u ~/.config/i3/Background/lock.jpg) 
 bindsym $mod+shift+x exec --no-startup-id betterlockscreen -l dim
@@ -71,6 +63,9 @@ bindsym $mod+Shift+Down       move down
 bindsym $mod+Shift+Up         move up
 bindsym $mod+Shift+Right      move right
 
+## Kill focused window
+bindsym $mod+Shift+p kill
+
 ## hide | show window(minus is "-" and plus is "+".)
 bindsym $mod+minus move scratchpad
 bindsym $mod+plus scratchpad show
@@ -90,16 +85,17 @@ for_window [window_role="webconsole"]                 floating enable
 for_window [title="Authy"]                            floating enable
 for_window [class="feh"]                              floating enable
 for_window [class="mpv"] floating enable resize set 960 540, move position center center 
+for_window [class="electron-netease-cloud-music"] floating enable resize set 960 540, move position center center 
 
 ## Popups during fullscreen mode(popup_during_fullscreen smart|ignore|leave_fullscreen)
 popup_during_fullscreen smart
 
 ## Sticky floating windows(sticky enable|disable|toggle)
-for_window [instance=chromium] sticky enable
+#for_window [instance=chromium] sticky enable resize set 960 540
 
 ## Split in horizontal orientation
 bindsym $mod+semicolon split v
-## Split in vertical orientation ##
+## Split in vertical orientation 
 bindsym $mod+apostrophe split h
 
 ## switch to near workspace
@@ -116,6 +112,9 @@ bindsym $mod+e layout toggle split
 
 ## Toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
+
+## Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
 
 ## Change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
