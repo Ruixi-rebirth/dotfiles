@@ -25,12 +25,12 @@ exec        --no-startup-id  nm-applet
 
 ## Quickly start some software
 bindsym $mod+Return exec --no-startup-id alacritty
-bindsym $mod+m exec --no-startup-id   chromium
-bindsym $mod+n exec --no-startup-id   firefox
+bindsym $mod+shift+b exec --no-startup-id   chromium
+bindsym $mod+b exec --no-startup-id   firefox
 bindsym $mod+t exec --no-startup-id   telegram-desktop
-bindsym $mod+q exec --no-startup-id   icalingua
-bindsym $mod+b exec --no-startup-id   youtube-music
-bindsym $mod+v exec --no-startup-id   electron-netease-cloud-music
+bindsym $mod+shift+m exec --no-startup-id   youtube-music
+bindsym $mod+m exec --no-startup-id   electron-netease-cloud-music
+bindsym $mod+v exec --no-startup-id   code
 bindsym F1 exec     --no-startup-id   flameshot gui
 #start  betterlockscreen(Set lock screen wallpaper:betterlockscreen -u ~/.config/i3/Background/lock.jpg) 
 bindsym $mod+shift+x exec --no-startup-id betterlockscreen -l dim
