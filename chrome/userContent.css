@@ -105,3 +105,9 @@ html.private .search-wrapper input {
     --active-color: var(--word_color1) !important;
   }
 }
+
+/*hide all scroll bars*/
+*{ scrollbar-width: none !important }
+
+/*hide the main scroll bar*/
+/*:root{ scrollbar-width: none !important }*/
