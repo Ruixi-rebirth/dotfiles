@@ -2,7 +2,7 @@
 
 - **Say to myself: ha ha 😃，I have tried other wm, but i3-gaps is still suitable for me, maybe I am used to i3, maybe I am too naive！！！**
 
-![](https://files.catbox.moe/vkkev6.gif)
+![](https://s6.jpg.cm/2022/03/05/LzzwKQ.gif)
 
 <hr/>
 
