@@ -2,25 +2,25 @@
 
 - **Say to myself: ha ha 😃，I have tried other wm, but i3-gaps is still suitable for me, maybe I am used to i3, maybe I am too naive！！！**
 
-![](image/show.gif)
+![](https://s6.jpg.cm/2022/03/05/LzzwKQ.gif)
 
 <hr/>
 
-![](image/show1.png)
+![](https://s2.loli.net/2022/03/05/pLJGnkfhKt3RCuN.png)
 
 <hr/>
 
-![](image/show2.png)
+![](https://s2.loli.net/2022/03/05/nWvSyO65BZrLU4d.png)
 
 <hr/>
 
-![](image/show3.png)
+![](https://s2.loli.net/2022/03/05/H5ZcQjypWatYXr6.png)
 
 <hr/>
 
-![](image/show4.png)
+![](https://s2.loli.net/2022/03/05/MY8oQOBLfUmKaWj.png)
 
 <hr/>
 
-![](image/show5.png)
+![](https://s2.loli.net/2022/03/05/toB9JiMxFVj13ws.png)
 
